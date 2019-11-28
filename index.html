@@ -8,7 +8,17 @@
 
 <title></title>
 </head>
-
+<script type="text/javascript">
+      //判断浏览器跳转手机站
+      try {
+      	var urlhash = window.location.hash;
+      	if (!urlhash.match("fromapp")) {
+      		if ((navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i))) {
+      			window.location = "http://wap.0279000.com/";
+      		}
+      	}
+      } catch (err) {}
+</script>
 <body>
 
 <p align="center">　</p>
